@@ -1,4 +1,4 @@
-import DrawObject from './draw.js'
+import DrawObject from "./draw.js";
 
 export default function DrawDDALine(gl,canvas) {
 
@@ -11,12 +11,6 @@ export default function DrawDDALine(gl,canvas) {
   let X1 = 100;
   let Y1 = 100;
 
-  // create vertex data
-  // const vertexData = [
-  //     0, 1, 0,
-  //     1, -1, 0,
-  //     -1, -1, 0,
-  //   ];
   function normalise(pos, axis) {
     const halfAxis = axis / 2;
     let normalised = pos / halfAxis - 1;
@@ -41,6 +35,5 @@ export default function DrawDDALine(gl,canvas) {
     Y += Yinc;
   }
   console.log(vertexData);
-  // let fragCode = `void main() {gl_FragColor = vec4(1, 0, 0, 1);}`; //red color
   DrawObject(gl,gl.POINTS, 1, vertexData,0,vertexData.length);
 }
