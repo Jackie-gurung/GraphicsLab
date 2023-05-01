@@ -12,8 +12,8 @@ if(gl == null){
 }
 // alert('everything is allright')
 
-// DrawTriangle(gl);
-DrawDDALine(gl,canvas);
-DrawBLALine(gl,canvas);
+DrawTriangle(gl);
+// DrawDDALine(gl,canvas);
+// DrawBLALine(gl,canvas);
 // DrawCircleMidPoint(gl,canvas)
 // DrawEllipseMidPoint(gl,canvas)
