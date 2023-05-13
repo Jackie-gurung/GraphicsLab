@@ -23,7 +23,7 @@ export default function DrawDDALine(gl,canvas) {
   let steps = dx > dy ? dx : dy;
 
   let Xinc = dx / steps;
-  let Yinc = dx / steps;
+  let Yinc = dy / steps;
 
   let X = X0;
   let Y = Y0;
